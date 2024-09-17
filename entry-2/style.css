@@ -1,0 +1,77 @@
+body 
+{
+    background-color: #f2f2da;
+    color: #18485b;
+    font-family: dupincel-variable, serif;
+    line-height: 1.35;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+#title 
+{
+   height: 50vh;
+   font-size: 50px;
+   text-align: center;
+   padding: 200px 0;
+}
+
+#title
+{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#intro
+{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#par1st
+{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#par2nd
+{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#par3rd
+{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#par4th
+{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#par5th
+{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#par6th
+{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#par7th
+{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#par8th
+{
+  margin-left: 100px;
+  margin-right: 100px;
+}
