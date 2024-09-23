@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
 body 
 {
     background-color: #f2f2da;
@@ -10,28 +12,71 @@ body
 
 #title 
 {
-   height: 50vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
    font-size: 50px;
    text-align: center;
-   padding: 200px 0;
+   margin: 0px;
+   width: 100vw;
+   background-image: linear-gradient( #bd0253,#bd02538d, #f2f2da, #f2f2da  );
 }
 
-#title
+#text
 {
-  margin-left: 100px;
-  margin-right: 100px;
+  margin: 75px;
+  font-family: "Crimson Text", serif;
 }
 
 #intro
 {
   margin-left: 100px;
   margin-right: 100px;
+  margin-bottom: 50px;
 }
 
-#par1st
+.par
 {
   margin-left: 100px;
   margin-right: 100px;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.par div
+{
+  width: 50%;
+}
+.leftdetails
+{
+  padding: 0 0 600px 100px;
+}
+
+.rightdetails
+{
+  padding: 100px 0 0 50px;
+}
+
+.leftdetails img
+{
+  order: 2;
+}
+
+.leftdetails p
+{
+  order: 1;
+
+}
+
+.rightdetails img
+{
+  order: 1;
+}
+
+.rightdetails p
+{
+  order: 2;
 }
 
 #par2nd
@@ -74,4 +119,9 @@ body
 {
   margin-left: 100px;
   margin-right: 100px;
+}
+
+img
+{
+  width: 100%;
 }
