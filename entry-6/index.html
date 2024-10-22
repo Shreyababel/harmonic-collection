@@ -7,7 +7,6 @@
 		<title>Landing Page Design | Codegrid</title>
 		<link rel="stylesheet" href="style.css" />
 		<script src="https://unpkg.co/gsap/dist/gsap.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -127,47 +126,40 @@
 			init();
 		});
 
-		tl = new TimelineMax();
+		const tl = gsap.timeline();
 
-		tl.from(".navbar > div", 1.6, {
-			opacity: 0,
-			y: 60,
-			ease: Expo.easeInOut,
-			delay: 0.6,
-		});
+tl.from(".navbar > div", {
+  duration: 1.6,
+  opacity: 0,
+  y: 60,
+  ease: "expo.inOut",
+  delay: 0.6
+});
 
-		tl.from(
-			".site-logo",
-			1.6,
-			{
-				opacity: 0,
-				y: 40,
-				ease: Expo.easeInOut,
-			},
-			"-=1.6"
-		);
+tl.from(".site-logo", {
+  duration: 1.6,
+  opacity: 0,
+  y: 40,
+  ease: "expo.inOut"
+}, "-=1.6");
 
-		tl.staggerFrom(
-			".site-menu > div",
-			1,
-			{
-				opacity: 0,
-				y: 60,
-				ease: Power2.easeOut,
-			},
-			0.2
-		);
+tl.from(".site-menu > div", {
+  duration: 1,
+  opacity: 0,
+  y: 60,
+  ease: "power2.out",
+  stagger: 0.2
+});
 
-		tl.staggerFrom(
-			".header > div",
-			1,
-			{
-				opacity: 0,
-				y: 60,
-				ease: Power2.easeOut,
-				delay: -1.4,
-			},
-			0.2
-		);
+tl.from(".header > div", {
+  duration: 1,
+  opacity: 0,
+  y: 60,
+  ease: "power2.out",
+  stagger: 0.2,
+  delay: -1.4
+});
 	</script>
 </html>
+
+
