@@ -1,33 +1,147 @@
-body, html {
+*{
   margin: 0;
   padding: 0;
-  height: 100%;
-  overflow: hidden;
+  box-sizing: border-box;
 }
-
-.animation-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+@font-face 
+{
+  font-family: 'LEMON MILK';
+  src: url('./fonts/lemon_milk-Regular.otf') format('opentype');
+}
+@font-face 
+{
+  font-family: 'NewYork';
+  src: url('./fonts/New.otf') format('opentype');
+}
+body
+{
   width: 100%;
-  height: 100%;
-  background-color: #000; /* Adjust background color */
+  height: 100vh;
+  background:#eae9e3;
+  font-family: 'LEMON MILK', sans-serif;
   overflow: hidden;
 }
-
-@keyframes moveCar {
-  0% { left: -100px; } /* Start position */
-  100% { left: 100%; } /* End position */
+h1 
+{
+  font-family: 'NewYork', serif;
 }
-
-.car {
+body a
+{
+  text-decoration: none;
+}
+header
+{
+  width: 90%;
+  margin: auto;
+}
+nav
+{
+  display: flex;
+  justify-content: space-between;
+}
+nav ul
+{
+  text-align: right;
+}
+nav ul li
+{
+  list-style: none;
+  display: inline-block;
+}
+a
+{
+  padding: 10px;
+  display: flex;
+  font-size: 16px;
+  color: #000;
+}
+nav>a
+{
+  font-size: 20px;
+}
+.container
+{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  height: 100%;
+}
+.sidebar
+{
+  display: grid;
+  align-items: flex-end;
+  padding: 16px;
+}
+.sidebar a{
+  writing-mode: vertical-rl;
+  padding: 13px 0px;
+  font-size: 15px;
+  font-weight: 370;
+}
+.line span
+{
+  display: inline-block;
+  width: 4px;
+  height: 200px;
+  background: #000;
+}
+.line span:nth-child(2)
+{
+  height: 178px;
+}
+.line span:nth-child(3)
+{
+  height: 155px;
+}
+.center
+{
+  position: relative;
+  padding-top: 40px;
+}
+h1
+{
   position: absolute;
-  top: 80%; /* Adjust position */
-  left: -100px; /* Start position */
-  width: 100px; /* Adjust size */
-  height: 50px; /* Adjust size */
-  background-color: #fff; /* Adjust color */
-  border: 2px solid red; /* Add border to see it */
-  animation: moveCar 20s linear infinite; /* Match animation name and duration */
+  left: 40%;
+  z-index: 999;
+  font-size: 184px;
+  width: 100%;
+  top: 22%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: NewYork;
+  text-shadow: 1px -2px 2px rgba(0,0,0,1),
+               1px -2px 5px rgba(0,0,0,1),
+               1px -2px 4px rgba(0,0,0,1),
+               1px -2px 5px rgba(0,0,0,1),
+               1px -2px 4px rgba(0,0,0,1),
+               1px -4px 4px rgba(0,0,0,1),
+               1px -2px 4px rgba(0,0,0,1),
+               1px -2px 4px rgba(0,0,0,1),
+               1px -2px 4px rgba(0,0,0,1);
+}
+.img
+{
+  display: flex;
+  align-items: flex-end;
+}
+.img img 
+{
+  width: 350px;
+  height: 500px;
+  object-fit: cover;
+  box-shadow: 0px 2px 5px 5px #000;
+}
+.img img:first-child,
+.img img:last-child
+{
+  width: 300px;
+  height: 390px;
+  transform: rotate(-25deg) translate(50px, 10px);
+  position: relative;
+  z-index: -1;
+}
+.img img:last-child
+{
+  transform: rotate(25deg) translate(-50px, 10px);
 }
