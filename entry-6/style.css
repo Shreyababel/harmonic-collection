@@ -2,17 +2,19 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
-
-body {
+ }
+ 
+ 
+ body {
 	width: 100%;
 	height: 100vh;
 	box-sizing: border-box;
 	background: #eae9e3;
 	overflow: hidden;
-}
-
-.container-items {
+ }
+ 
+ 
+ .container-items {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -20,34 +22,39 @@ body {
 	display: flex;
 	align-items: center;
 	cursor: pointer;
-}
-
-.item {
+ }
+ 
+ 
+ .item {
 	position: relative;
 	flex-grow: 1;
 	font-family: "Mak";
 	font-size: 220px;
 	transition: all 300ms ease-in-out;
-}
-
-.item:hover {
+ }
+ 
+ 
+ .item:hover {
 	flex-grow: 2;
 	font-size: 400px;
-}
-
-h3 {
+ }
+ 
+ 
+ h3 {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: #000;
-}
-
-img {
+ }
+ 
+ 
+ img {
 	width: 100%;
-}
-
-.container-img-wrap {
+ }
+ 
+ 
+ .container-img-wrap {
 	position: absolute;
 	top: -60rem;
 	left: -80px;
@@ -56,18 +63,20 @@ img {
 	overflow: hidden;
 	pointer-events: none;
 	visibility: hidden;
-}
-
-.container-img {
+ }
+ 
+ 
+ .container-img {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	background-size: cover;
-}
-
-@media (max-width: 900px) {
+ }
+ 
+ 
+ @media (max-width: 900px) {
 	.container-items {
 		height: 100px;
 	}
@@ -84,9 +93,10 @@ img {
 	.navbar {
 		display: none !important;
 	}
-}
-
-.site-logo {
+ }
+ 
+ 
+ .site-logo {
 	position: fixed;
 	left: 50%;
 	transform: translateX(-50%);
@@ -94,9 +104,10 @@ img {
 	font-size: 24px;
 	line-height: 100px;
 	text-transform: uppercase;
-}
-
-.navbar {
+ }
+ 
+ 
+ .navbar {
 	position: fixed;
 	width: 100%;
 	height: 100px;
@@ -106,17 +117,20 @@ img {
 	font-family: Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 	line-height: 100px;
-}
-
-.site-menu {
+ }
+ 
+ 
+ .site-menu {
 	display: flex;
-}
-
-.menu-item {
+ }
+ 
+ 
+ .menu-item {
 	margin-left: 60px;
-}
-
-.header {
+ }
+ 
+ 
+ .header {
 	position: absolute;
 	width: 100%;
 	display: flex;
@@ -127,18 +141,22 @@ img {
 	font-family: 'NewYork', serif;
 	font-size: 40px;
 	z-index: 2;
-}
-
-.header-left span {
+ }
+ 
+ 
+ .header-left span {
 	font-family: Arial, Helvetica, sans-serif;
-}
-
-.link {
+ }
+ 
+ 
+ .link {
 	margin: 40px 0;
-}
-
-.link a {
+ }
+ 
+ 
+ .link a {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	color: #000;
-}
+ }
+ 
