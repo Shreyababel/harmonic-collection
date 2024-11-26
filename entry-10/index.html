@@ -1,68 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homage to the Square: Ascending by Josef Albers</title>
-    <style>
-        body 
-        {
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-        }
-        .artwork 
-        {
-            width: 300px;
-            height: 300px;
-            background-color: #82c4ec; /* background color of the outer square */
-            display: flex;
-            justify-content: center;
-            align-items: flex-start; /* Aligns the square to the top */
-            position: relative;
-        }
-        .inner-square 
-        {
-            width: 200px; /* width of the middle square */
-            height: 200px;
-            background-color: #c4c4c2; /* color of the middle square */
-            display: flex;
-            justify-content: center;
-            align-items: flex-start; /* Aligns the square to the top */
-            position: absolute;
-            top: 25%; /* Offset */
-        }
-        .innermost-square 
-        {
-            width: 100px; /* width of the next innermost square */
-            height: 100px;
-            background-color: #ffffff; /* color of the next innermost square */
-            display: flex;
-            justify-content: center;
-            align-items: flex-start; /* Aligns the square to the top */
-            position: absolute;
-            top: 30%; /* Offset */
-        }
-        .mostinnermost-square 
-        {
-            width: 50px; /* width of the smallest innermost square */
-            height: 50px;
-            background-color: #fee211; /* color of the smallest innermost square */
-            position: absolute;
-            top: 35%; /* Offset */
-        }
-    </style>
-</head>
-<body>
-    <div class="artwork">
-        <div class="inner-square">
-            <div class="innermost-square">
-                <div class="mostinnermost-square"></div>
-            </div>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCROLL</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <p>Scroll To Reveal</p>
     </div>
-</body>
+    <div class="container">
+      <div class="row" id="row-1">
+        <div class="col">
+          <div class="img-container right">
+            <img src="./image/img1.jpg" alt="" />
+            <p>QUEENS NIGHT MARKET</p>
+            <p>Location: Flushing Meadows Corona Park</p>
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+      <div class="row" id="row-2">
+        <div class="col"></div>
+        <div class="col">
+          <div class="img-container left">
+            <img src="./image/img2.jpg" alt="" />
+            <p>MCGLORICK PARK FARMER'S MARKET</p>
+            <p>Location: McGolrick Park, Greenpoint</p>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="row-3">
+        <div class="col">
+          <div class="img-container right">
+            <img src="./image/img3.jpeg" alt="" />
+            <p>GRAND BAZAAR</p>
+            <p>Location: 100 W 77th St</p>
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+      <div class="row" id="row-4">
+        <div class="col"></div>
+        <div class="col">
+          <div class="img-container left">
+            <img src="./image/img4.webp" alt="" />
+            <p>INWOOD GREENMARKET</p>
+            <p>Location: Isham Street and Seaman Avenue</p>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="row-5">
+        <div class="col">
+          <div class="img-container right">
+            <img src="./image/img5.jpg" alt="" />
+            <p>FORT GREENE PARK GREENMARKET</p>
+            <p>Location: Washington Park and Dekalb Avenue</p>
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+      <div class="row" id="row-6">
+        <div class="col"></div>
+        <div class="col">
+          <div class="img-container left">
+            <img src="./image/img6.jpeg" alt="" />
+            <p>HESTER STREET FAIR</p>
+            <p>Location: Essex Crossing</p>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="row-7">
+        <div class="col">
+          <div class="img-container right">
+            <img src="./image/img7.jpg" alt="" />
+            <p>TOMPKINS SQUARE GREENMARKET</p>
+            <p>Location: A & 7th Street</p>
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+      <div class="row" id="row-8">
+        <div class="col"></div>
+        <div class="col">
+          <div class="img-container left">
+            <img src="./image/img8.jpg" alt="" />
+            <p>SMORGASBURG</p>
+            <p>Location: Breeze Hill, Prospect Park</p>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="row-9">
+        <div class="col">
+          <div class="img-container right">
+            <img src="./image/img9.jpg" alt="" />
+            <p>BUSHWICK FLEA</p>
+            <p>Location: 2 Noble Street, Greenpoint</p>
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+      <div class="row" id="row-10">
+        <div class="col"></div>
+        <div class="col">
+          <div class="img-container left">
+            <img src="./image/img10.jpg" alt="" />
+            <p>GREENPOINT TERMINAL MARKET</p>
+            <p>Location: Flushing Meadows Corona Park</p>
+          </div>
+        </div>
+      </div>
+      <div class="whitespace"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        function isInViewport(el) {
+          const rect = el.getBoundingClientRect();
+          return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <=
+              (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <=
+              (window.innerWidth || document.documentElement.clientWidth)
+          );
+        }
+
+        const rows = document.querySelectorAll(".row");
+        rows.forEach((row) => {
+          if (isInViewport(row)) {
+            const img = row.querySelector("img");
+            if (row.querySelector(".left")) {
+              gsap.to(img, {
+                clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+              });
+            } else {
+              gsap.to(img, {
+                clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+              });
+            }
+          }
+        });
+
+        gsap.utils.toArray(".img-container.right img").forEach((img) => {
+          gsap.to(img, {
+            clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+            scrollTrigger: {
+              trigger: img,
+              start: "top 75%",
+              end: "bottom 70%",
+              scrub: true,
+            },
+          });
+        });
+
+        gsap.utils.toArray(".img-container.left img").forEach((img) => {
+          gsap.to(img, {
+            clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+            scrollTrigger: {
+              trigger: img,
+              start: "top 75%",
+              end: "bottom 70%",
+              scrub: true,
+            },
+          });
+        });
+
+        gsap.utils.toArray(".img-container p").forEach((text) => {
+          gsap.from(text, {
+            opacity: 0,
+            y: 20,
+            scrollTrigger: {
+              trigger: text,
+              start: "top 90%",
+              toggleActions: "play none none reverse",
+            },
+          });
+        });
+      });
+    </script>
+  </body>
 </html>
